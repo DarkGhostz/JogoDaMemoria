@@ -29,14 +29,16 @@ const checkCards = () =>{
     const firstCharacter = firstCard.getAttribute('data-character');
     const secondCharacter = secondCard.getAttribute('data-character');
 
-    if (firstCharacter == secondCharacter) {
+    if (firstCharacter === secondCharacter) {
 
         firstCard.firstChild.classList.add('disabled-card');
         secondCard.firstChild.classList.add('disabled-card');
         firstCard= '';
         secondCard = '';
-        checkEndGame();
 
+        setTimeout(() => {
+          checkEndGame();
+        }, 200); // adicione um atraso de 200ms antes de chamar a função checkEndGame()
 
     } else{
         setTimeout(()=> {
@@ -45,12 +47,11 @@ const checkCards = () =>{
 
             firstCard= '';
             secondCard = '';
-            
-
         }, 500);
-        
-         }
+    }
 }
+
+
 
 const revealCard = ({ target }) =>{
 if(target.parentNode.className.includes('reveal-card')){
