@@ -159,12 +159,12 @@ header{
       }
       /* Ajuste o tamanho da fonte no header */
       header {
-          font-size: 1em;
+          font-size: 0.5em;
       }
   }
   @media only screen and (max-width: 480px) {
     header {
-      font-size: 1em;
+      font-size: 0.5em;
       padding: 10px;
     }
   
@@ -178,7 +178,7 @@ header{
   /* Estilos para telas com largura entre 480px e 768px (por exemplo, tablets) */
   @media only screen and (min-width: 480px) and (max-width: 768px) {
     header {
-      font-size: 1.2em;
+      font-size: 0.6em;
       padding: 15px;
     }
   
@@ -204,7 +204,7 @@ header{
   }
   @media only screen and (min-width: 828px) and (max-width: 1792px) {
     header {
-      font-size: 1.2em;
+      font-size: 0.6em;
       padding: 15px;
     }
   
