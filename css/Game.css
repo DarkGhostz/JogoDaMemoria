@@ -202,3 +202,13 @@ header{
       margin: 0px auto 5px;
     }
   }
+  @media only screen and (min-width: 828px) and (max-width: 1792px) {
+    header {
+      font-size: 1.2em;
+      padding: 15px;
+    }
+  
+    .grid {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+      margin: 0px auto 5px;
