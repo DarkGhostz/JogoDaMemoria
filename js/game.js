@@ -16,6 +16,15 @@ const characters = [
 ]
 let firstCard = '';
 let secondCard = '';
+const resettGame = () => {
+    clearInterval(this.loop);
+    firstCard = '';
+    secondCard = '';
+    grid.innerHTML = '';
+    timer.innerHTML = 0;
+    startTimer();
+    loadGame();
+  };
 const resetGame = () => {
     // Remove todas as cartas da grid
     while (grid.firstChild) {
@@ -41,6 +50,7 @@ const checkEndGame = () =>{
 
         // Reiniciar o jogo quando o jogador vencer
     resetGame();
+    resettGame();
     }
 }
 
