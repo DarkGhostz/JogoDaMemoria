@@ -147,7 +147,7 @@ header{
   @media (max-width: 767px) {
       /* Ajuste a largura do grid para 2 colunas */
       .grid {
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: repeat(5, 1fr);
       }
   }
   
@@ -155,7 +155,7 @@ header{
   @media (max-width: 479px) {
       /* Ajuste a largura do grid para 1 coluna */
       .grid {
-          grid-template-columns: 1fr;
+        grid-template-columns: repeat(5, 1fr);
       }
       /* Ajuste o tamanho da fonte no header */
       header {
@@ -169,7 +169,7 @@ header{
     }
   
     .grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 10px;
       margin: 0px auto 5px;
     }
@@ -183,7 +183,7 @@ header{
     }
   
     .grid {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 15px;
       margin: 0px auto 5px;
     }
