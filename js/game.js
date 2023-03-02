@@ -16,12 +16,31 @@ const characters = [
 ]
 let firstCard = '';
 let secondCard = '';
+const resetGame = () => {
+    // Remove todas as cartas da grid
+    while (grid.firstChild) {
+      grid.removeChild(grid.firstChild);
+    }
+  
+    // Resetar as variáveis de controle do jogo
+    firstCard = null;
+    secondCard = null;
+    isChecking = false;
+    disabledCards = [];
+    timer = 0;
+  
+    // Carregar um novo jogo
+    loadGame();
+  };
 
 const checkEndGame = () =>{
     const disabledCards = document.querySelectorAll('.disabled-card');
       if (disabledCards.length == 20){
        clearInterval(this.loop);
        alert(`Parabéns, ${spanPlayer.innerHTML} , seu tempo foi de: ${timer.innerHTML}!`);
+
+        // Reiniciar o jogo quando o jogador vencer
+    resetGame();
     }
 }
 
