@@ -10,7 +10,7 @@ main{
     padding: 20px 20px 50px;
     
 }
-header{
+/*header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -140,7 +140,7 @@ header{
   .disabled-card{
       filter: saturate(0);
       opacity: 0.5;
-  }
+  }*/
   
   
   /* Para telas menores que 768px */
